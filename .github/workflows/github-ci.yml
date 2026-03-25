@@ -11,7 +11,7 @@ on:
 jobs:
   # Build job
   # TODO-STEP 3: Create your "Build" job
-  build:
+  buildApp:
     # TODO-STEP 3a: Specify the runner for this job
     runs-on: ubuntu-latest
     
@@ -37,7 +37,7 @@ jobs:
   test:
     # TODO-STEP 4a: Ensure this job runs after the build job.
     # NOTE: Make sure to use the Job Name used above in Line 14. 
-    needs: build
+    needs: buildApp
     runs-on: ubuntu-latest
     
     steps:
